@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
 }
+
 /* elemen selector */
 body {
-    background-color: rgb(150, 149, 148);
+    background-color: rgb(239, 199, 158);
     font-family:Times New Roman;
 }
 
@@ -15,6 +16,11 @@ body {
 
 .col {
     width: 25%;
+    float: left;
+}
+
+.col-1 {
+    width: 50%;
     float: left;
 }
 
