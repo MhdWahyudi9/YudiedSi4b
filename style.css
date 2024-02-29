@@ -1,0 +1,29 @@
+/* elemen selector */
+body {
+    background-color: rgb(150, 149, 148);
+    font-family:Times New Roman;
+}
+
+/* class selector*/
+
+.text-primary {
+    color: rgb(7, 44, 77);
+}
+
+.col {
+    width: 25%;
+    float: left;
+}
+
+.img-responsive {
+    width: 100%;
+    max-height: 500px;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.rounded {
+    border-radius: 20px;
+}
