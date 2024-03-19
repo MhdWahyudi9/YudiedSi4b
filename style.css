@@ -79,6 +79,7 @@ body {
     padding: 10px;
 }
 
+/* penegelompokan barisan  */
 .row::after {
     content: "";
     clear: both;
