@@ -60,7 +60,9 @@ body {
     float: left;
 }
 
-
+.bg-clr {
+    background-color: antiquewhite;
+}
 
 .img-responsive {
     width: 100%;
