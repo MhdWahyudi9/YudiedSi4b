@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>Testimoni</h2>
+                <div class="mb-3">
+                    <label for="" class="from-label">Nama</label>
+                    <input type="text" class="form-control" id="nama">
+                </div>
+                <div class="mb-3">
+                    <label for="" class="from-label">Testimoni</label>
+                    <input type="text" class="form-control" id="testimoni">
+                </div>
+
+                <button class="btn btn-primary" id="btnSimpan">Simpan</button>
+            </div>
+            <div class="col-lg-6">
+                <h2>list</h2>
+                <!-- untuk merubah kembali menjadi List -->
+
+                <!-- <ul id="list"></ul> -->
+
+                <!-- membuat list menjadi tabel -->
+
+                <tabel class="table">
+                    <thead>
+                        <tr>
+                            <th>nama</th>
+                            <th>testimoni</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list"></tbody>
+                </tabel>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
