@@ -1,6 +1,6 @@
 document.getElementById ("welcome"). innerHTML = "Selamat Datang";
 document.getElementById ("nama"). innerHTML = "<b> Ahmad <b>";
-document.getElementById ("email"). innerHTML = "<b> Ahmad@test.com <b>";
+document.getElementById ("email"). innerHTML = "<b> hmad@test.com <b>";
 console.log("Hanya BIsa Dilihat di Console");
 
 //variabel//

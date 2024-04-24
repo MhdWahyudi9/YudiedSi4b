@@ -1,11 +1,11 @@
-let npm = document.getElementById("npm") 
+
+
+//tampilkan nama_mk pemrograman web
+console.log(nilai[0].kode_mk);let npm = document.getElementById("npm") 
 npm.innerHTML = localStorage.getItem("npm");
 
 let nama = document.getElementById("nama") 
 npm.innerHTML = localStorage.getItem("nama");
-
-////Simpan data ke localstorage
-localStorage.setItem("email", "wahyudi.com");
 
 //Data array//
 let  hobi = ["baca", "game", "makan"]
@@ -23,10 +23,9 @@ console.log(mhs.nama)
 let nilai = [
     {kode_mk: "SI001", nama_mk: "Pemrograman Web"},
     {kode_mk: "SI002", nama_mk: "PAB"},
+    {kode_mk: "SI002", nama_mk: "PAB"},
+    {kode_mk: "SI002", nama_mk: "PAB"},
 ];
-
-//tampilkan nama_mk pemrograman web
-console.log(nilai[0].nama_mk);
 console.log(nilai[1].nama_mk);
 
 //simpan nilai ke dalam localstorage
