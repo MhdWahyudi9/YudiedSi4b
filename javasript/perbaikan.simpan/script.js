@@ -1,4 +1,5 @@
 let inputNama = document.getElementById("nama");
+let inputEmail = document.getElementById ("email")
 let inputTestimoni = document.getElementById("testimoni");
 let btnSimpan = document.getElementById("btnSimpan");
 let list = document.getElementById("list");
