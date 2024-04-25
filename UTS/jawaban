@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,3 +100,5 @@ function updateStats() {
 
 // Memanggil fungsi updateStats saat halaman dimuat
 updateStats();
+=======
+>>>>>>> 3a667f8697d626f2cd4949ead4ba605fa6cc02df
