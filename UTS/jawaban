@@ -1,0 +1,104 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Anggota</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Form Anggota</h2>
+        <form id="memberForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+
+            <label for="hp">Nomor HP:</label>
+            <input type="tel" id="hp" required><br><br>
+
+            <label for="url_foto">URL Foto:</label>
+            <input type="url" id="url_foto" required><br><br>
+
+            <label for="usia">Usia:</label>
+            <input type="number" id="usia" required><br><br>
+
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+// Mengecek apakah localStorage sudah ada data anggota sebelumnya
+let membersData = localStorage.getItem('wdev_npm') ? JSON.parse(localStorage.getItem('wdev_npm')) : [];
+
+// Menambahkan event listener untuk saat form disubmit
+document.getElementById('memberForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // Mengambil nilai input dari form
+    let nama = document.getElementById('nama').value;
+    let email = document.getElementById('email').value;
+    let hp = document.getElementById('hp').value;
+    let url_foto = document.getElementById('url_foto').value;
+    let usia = parseInt(document.getElementById('usia').value);
+
+    // Membuat objek anggota baru
+    let member = {
+        nama: nama,
+        email: email,
+        hp: hp,
+        url_foto: url_foto,
+        usia: usia
+    };
+
+    // Menyimpan data anggota ke dalam array
+    membersData.push(member);
+
+    // Menyimpan data anggota ke dalam localStorage
+    localStorage.setItem('wdev_npm', JSON.stringify(membersData));
+
+    // Memanggil fungsi clearForm untuk mengosongkan form
+    clearForm();
+
+    // Memperbarui tampilan jumlah anggota, usia paling muda, dan usia paling tua
+    updateStats();
+});
+
+// Fungsi untuk mengosongkan form
+function clearForm() {
+    document.getElementById('nama').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('hp').value = "";
+    document.getElementById('url_foto').value = "";
+    document.getElementById('usia').value = "";
+}
+
+// Fungsi untuk menghitung jumlah anggota, usia paling muda, dan usia paling tua
+function updateStats() {
+    let totalMembers = membersData.length;
+    let youngestAge = Infinity;
+    let oldestAge = 0;
+
+    for (let member of membersData) {
+        if (member.usia < youngestAge) {
+            youngestAge = member.usia;
+        }
+        if (member.usia > oldestAge) {
+            oldestAge = member.usia;
+        }
+    }
+
+    console.log("Jumlah anggota:", totalMembers);
+    console.log("Usia anggota paling muda:", youngestAge);
+    console.log("Usia anggota paling tua:", oldestAge);
+}
+
+// Memanggil fungsi updateStats saat halaman dimuat
+updateStats();
+=======
+>>>>>>> 3a667f8697d626f2cd4949ead4ba605fa6cc02df
